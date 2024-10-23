@@ -1,0 +1,93 @@
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+section{
+  background-color: lightblue;
+}
+
+main{
+  padding: 1em;
+}
+/* Declaracion de un media query 
+Aqui va un maximo y un minimo de pantalla, entre otras acciones, se parte con el tamaño minimo al mas grande*/
+/* Vamos a comenzar con una pantalla pequeña de 600px como la de un movil*/
+@media(max-width: 600px){
+  section{
+    background-color: lightcoral;
+  }
+  #saludo{
+    display: none;
+  }
+
+  #solo-tablet{
+    display: none;
+  }
+
+  #contenido-mobile{
+    display: block;
+  }
+  
+  #contenido-tablet{
+    display: none;
+  }
+
+  #contenido-pc{
+    display: none;
+  }
+}
+
+
+/* Vista de un tablet */
+/* Se debe dar valor minimo y maximo de la siguiente manera */
+@media(min-width: 601px) and (max-width: 1024px){
+  section{
+    background-color: lightgreen;
+  }
+  #solo-tablet{
+    display: block;
+  }
+  #contenido-mobile{
+    display: none;
+  }
+  
+  #contenido-tablet{
+    display: block;
+  }
+
+  #contenido-pc{
+    display: none;
+  }
+}
+
+/* Ahora vamos a construir con la vista de pc */
+@media(min-width: 1025px){
+  section{
+    background-color: lightpink;
+  }
+  #solo-tablet{
+    display: block;
+  }
+
+  #contenido-mobile{
+    display: none;
+  }
+  
+  #contenido-tablet{
+    display: none;
+  }
+
+  #contenido-pc{
+    display: block;
+  }
+}
