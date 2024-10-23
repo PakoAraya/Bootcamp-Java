@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea Arreglo</title>
+</head>
+<body>
+  
+  <script>
+    //Array de alumnos
+    let alumnos = [
+      {nombre: "Pedro", nota: 5},
+      {nombre: "Ani", nota: 7},
+      {nombre: "Pato", nota: 6},
+    ];
+    //Imprimiendo el arreglo de alumnos
+    for(let i=0; i<alumnos.length; i++){
+      console.log(alumnos[i]);
+    }
+
+    //Array de carros
+    let carros = [
+      {
+        marca: "Subaru", 
+        modelo: "XV", 
+        anio:  2024, 
+        colores: ["Blanco","Rojo","Beige","Azul"]
+      },
+      {
+        marca: "Toyota", 
+        modelo: "Corolla 86", 
+        anio:  2020, 
+        colores: ["Azul","Rojo","Negro","Blanco"]
+      },
+      {
+        marca: "Skoda", 
+        modelo: "Fabia Montecarlo RS", 
+        anio:  2024, 
+        colores: ["Gris","Negro","Rojo","Azul"]
+      },
+      {
+        marca: "Volkswagen", 
+        modelo: "Golf GTI", 
+        anio:  2022, 
+        colores: ["Blanco","Negro","Rojo","Amarillo"]
+      },
+    ];
+    //Mostrando o recorriendo la lista de autos.
+    for(let i=0; i<carros.length; i++){
+      console.log(carros[i]);
+      console.log("Colores del: " + carros[i].marca +" "+ carros[i].modelo + " | Colores propuestos: " + carros[i].colores);
+    }
+
+  </script>
+
+</body>
+</html>

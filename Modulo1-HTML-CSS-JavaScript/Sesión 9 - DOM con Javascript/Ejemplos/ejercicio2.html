@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let colores = ["rojo", "azul", "verde"];
+    //agregando un cuarto colo o elemento.
+    colores.push("naranjo");
+    //Mostrando la segunda posicion
+    console.log("Color de la segunda posición: " +  colores[1]);
+    //Recorriendo el array
+    for(let i=0; i < colores.length; i++){
+      console.log("Color: " + colores[i]);
+    }
+    //Eliminando el primer color.
+    delete colores[0];
+    //colores.shift[0];
+    for(let i=0; i < colores.length; i++){
+      console.log("Color: " + colores[i]);
+    }
+  </script>
+
+</body>
+</html>

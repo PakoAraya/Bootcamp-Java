@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objeto Libro</title>
+</head>
+<body>
+  
+
+  <script>
+    let libro={
+      autor: "J.R.R Martin",
+      titulo: "Juego de Tronos",
+      anio_publicacion: 1996,
+    }
+    console.log(libro.titulo);
+
+    libro.anio_publicacion = 1998;
+    console.log(libro.anio_publicacion);
+
+    libro.editorial = "Magnus Editions";
+    delete libro.autor;
+    console.log(libro);
+
+    //Otra forma de imprimir por consola el objeto
+    console.log("persona", persona);
+
+  </script>
+
+</body>
+</html>

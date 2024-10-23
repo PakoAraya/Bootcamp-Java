@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // Ejemplo de objeto Javascript
+    let persona = {
+      edad: 20,
+      nombre: "Samuel",
+      programador: true,
+      mascota: false,
+    };
+    //Podemos modificar y sobreescribir datos de un objeto.
+    persona.edad = 40;
+    //Y tambien podemos eliminar atributos del objeto
+    delete persona.nombre;
+
+    console.log(persona);
+    console.log(persona.edad);
+    console.log(persona["nombre"]); //Aqui no va a encontrar valor y lo marca como undefined
+
+    //Ejemplo de arreglos o array
+    let frutas =["platano","kiwi","pera"];
+    console.log(frutas[1]);
+    frutas.push("mango");
+    console.log(frutas);
+    //Para saber el largo de un arreglo o saber cuantos elementos tiene
+    console.log(frutas.length);
+
+    //Para recorrer cada uno de los elementos que tenemos dentro de un arreglo, se hace con un for
+    for (let i = 0; i < frutas.length; i++) {
+      console.log("Fruta: " + frutas[i]);
+    }
+
+    let estudiante ={
+      nombre: "Maria",
+      edad: 22,
+      cursos: ["Matematicas", "Fisica","Quimica"],
+    };
+    console.log(estudiante.nombre);
+    console.log(estudiante.cursos[1]); //Imprimiendo elementos de un array dentro de un objeto.
+
+    //Array de Objetos
+    let peliculas = [
+      {titulo: "Inception", director: "Christopher Nolan"},
+      {titulo: "Matrix", director: "Lana y Lilly Wachowski"},
+      {titulo: "El señor de los anillos", director: "Peter Jackson"},
+    ];
+    //Ahora vamos a recorrer el arreglo de objetos para rescatar a los directores de peliculas.
+    for(let i = 0; i < peliculas.length; i++){
+      console.log(peliculas[i].director);
+      console.log(peliculas[i].director, peliculas[i].titulo);
+    }
+
+  </script>
+
+</body>
+</html>
