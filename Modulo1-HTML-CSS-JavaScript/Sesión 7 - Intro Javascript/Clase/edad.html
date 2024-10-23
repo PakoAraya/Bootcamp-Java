@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Mayoría de Edad</title>
+</head>
+<body>
+    <h1>Verifica si eres mayor de edad</h1>
+    <label for="anioNacimiento">Año de Nacimiento:</label>
+    <input type="number" id="anioNacimiento" placeholder="Ingresa tu año de nacimiento">
+    <button onclick="verificarEdad()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarEdad() {
+
+            //
+            var anioNacimiento = document.getElementById('anioNacimiento').value;
+            // var anioActual = new Date().getFullYear(); forma de optener el año de forma automatica
+            var anioActual = 2024;
+            //completar
+            let edad;
+            edad = anioActual - anioNacimiento;
+            //en el parrafo indicar con un texto si es mayor Ó menor de edad.
+            //**tip: restar año actual con el ingresado por el usuario y verificar "SI" es mayor de edad(18)
+            if(edad > 18){
+                document.getElementById("resultado").textContent = "Mayor de edad";
+                alert("Eres mayor de edad, tu edad es: " + edad);
+            }else{
+                document.getElementById("resultado").textContent = "Menor de edad";
+                alert("Eres menor de edad, tu edad es: " + edad);
+            } 
+        }
+    </script>
+</body>
+</html>
+ 

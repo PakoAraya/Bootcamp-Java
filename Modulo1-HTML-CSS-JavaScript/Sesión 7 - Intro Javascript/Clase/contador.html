@@ -1,0 +1,40 @@
+<!-- Ejercicio 2Contador de Clicks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Clicks</title>
+</head>
+<body>
+
+  <h1>Contador de Clicks</h1>
+  <p>Has hecho click <span id="valorId">0</span> veces</p>
+  <button onclick="aumentarContador()">Click Aquí => SUMAR</button>
+  <button onclick="disminuirContador()">Click Aquí => RESTAR</button>
+
+<!-- Aqui vamos a escribir la logica de Javascript -->
+  <script>
+    //Declaracion de variable global.
+    let contador = 0;
+
+    //Declaracion de funcion que sume clicks
+    function aumentarContador(){
+      contador = contador +1;
+      document.getElementById("valorId").textContent=contador;
+    }
+
+    //Declaracion de funcion que reste clicks
+    function disminuirContador(){
+      if(contador > 0){
+        contador = contador -1;
+        document.getElementById("valorId").textContent = contador;      
+      }else{
+        alert("No Aplica");
+      }
+    }
+    
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  <p id="texto">Este es mi párrafo</p>
+  <p id="texto2">Este es mi párrafo con estilo</p>
+  <button onclick="cambiarTexto()">Cambiar</button>
+
+  <!-- Trabajando Javascript dentro del HTML -->
+  <script>
+    function cambiarTexto(){
+      //Aqui cambia el texto del primer parrado
+      document.getElementById("texto").innerHTML = "Nuevo Contenido";
+      //Aqui le cambia el color al segundo parrafo
+      let parrafo = document.getElementById("texto2");
+      parrafo.style.color = "red";
+      parrafo.style.fontSize = "20px";
+      
+    }
+  </script>
+</body>
+</html>
