@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio del Estudiante</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación sacado de bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Fco Javier Araya Hernández</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conocimientos">Conocimientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio de Proyectos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Redes de Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/francisco-javier-araya-hernandez-95874b19/" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/PakoAraya" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+                        <li><a class="dropdown-item" href="https://gitlab.com/franarayah" target="_blank"><i class="fa fa-gitlab"></i> GitLab</a></li>
+                        <li><a class="dropdown-item" href="https://youtube.com/miscelabros" target="_blank"><i class="fa fa-youtube"></i> YouTube</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#contacto" <i class="bi bi-envelope"></i>Contáctame</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Bienvenido a Mi Portafolio</h1>
+                    <p>Soy Francisco Javier Araya Hernández. <br> Después de muchos años estoy retomando una de las áreas que más me apasionan que es la programación. <br> Actualmente me encuentro aprendiendo HTML, CSS y Javascript junto con otras tecnologías y herramientas modernas con las que iré interactuando, generando propuestas y compartiéndolas aquí.
+                      <br>Te comparto un poco de mi.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/img/yo/IMG_3082.JPG" alt="Foto de Perfil" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conocimientos -->
+    <section id="conocimientos" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Conocimientos</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <a href="#" class="btn btn-outline-light d-block">
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <p>HTML5</p>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="#" class="btn btn-outline-light d-block">
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <p>CSS3</p>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="#" class="btn btn-outline-light d-block">
+                        <i class="fab fa-js fa-3x"></i>
+                        <p>JavaScript</p>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="#" class="btn btn-outline-light d-block">
+                        <i class="fab fa-git fa-3x"></i>
+                        <p>Git</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio de Proyectos -->
+    <section id="portafolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Portafolio de Proyectos</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/proyects/bpmn.jpeg" class="card-img-top img-fluid" alt="Consultoria TI en BPMN">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultorias TI</h5>
+                            <p class="card-text">Durante buena parte de mi vida, estuve trabajando en el sector de las consultorías a empresas de diversos nichos, apoyándolas en la mejora y optimización de procesos con tecnologías BPM y mucha ingeniería, lo que me llevó en un momento de mi vida al realizar docencia.</p>
+                            <a href="https://www.bpmn.org" target="_blank" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/proyects/gitlab_github.jpeg" class="card-img-top img-fluid" alt="Desarrollador">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollador</h5>
+                            <p class="card-text">En la actualidad me encuentro capacitándome para volver a ingresar a la industria del desarrollo del software, pues estuve mucho tiempo en la parte de gestión, proyectos e ingeniería, pero la programación es lo que más me gusta desarrollar.</p>
+                            <a href="https://github.com/PakoAraya" target="_blank" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/proyects/miscelabros.png" class="card-img-top img-fluid" alt="Creador de contenido y YouTuber">
+                        <div class="card-body">
+                            <h5 class="card-title">MiscelaBros</h5>
+                            <p class="card-text">Partimos con mi hermano como youtubers como un hobbie dentro de mis espacios libres, y lo que partió siendo un pasatiempo, de a poco se formalizó. <br> En la actualidad cuentamos con el apoyo de grandes marcas de tecnologías que nos apoyan en creación de contenido.</p>
+                            <a href="https://www.youtube.com/miscelabros" target="_blank" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agregar más cards según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Formulario de Contacto</h2>
+            <form action="#" method="get" >
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Dirección de Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" >
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Asunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="checkbox" onclick="soyHumano()" required>
+                  <p id="parrafo-soyHumano">Reconozco que soy un ser humano y no un bot.</p>
+              </div>
+                <button type="submit" class="btn btn-primary" onclick="validarCorreo(document.getElementById('email').value)">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/francisco-javier-araya-hernandez-95874b19/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/PakoAraya" target="_blank" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://gitlab.com/franarayah" target="_blank" class="text-white mx-2"><i class="fab fa-gitlab fa-2x"></i></a>
+            <a href="https://youtube.com/miscelabros" target="_blank" class="text-white mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

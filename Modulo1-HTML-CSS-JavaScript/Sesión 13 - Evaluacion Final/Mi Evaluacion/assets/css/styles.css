@@ -1,0 +1,246 @@
+/* Estilos personalizados */
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(39, 7, 84))) fixed;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+header {
+  background: url('/assets/img/backgrounds/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el párrafo */
+  padding: 80px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #fff; /* Color del texto */
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+img.rounded-circle {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+}
+
+nav-item dropdown-menu a i{
+  color: black;
+}
+
+.card {
+  border: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.card-img-top {
+/* Esto lo saque de stack overflow para mantener la proporcion de las tarjetas*/
+/* https://es.stackoverflow.com/questions/115586/no-puedo-ajustar-las-imagenes-al-carrusel-de-bootstrap-y-ajustar-las-imagenes-en */
+  width: 100%;
+  height: 200px !important; 
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+/* Estilo para los botones de conocimientos */
+.btn {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn i {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Fondo semitransparente en hover */
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgba(108, 117, 125, 0.1); /* Fondo semitransparente en hover */
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+  background-color: rgba(255, 193, 7, 0.1); /* Fondo semitransparente en hover */
+}
+
+#contacto #parrafo-soyHumano {
+  color: white; /* Cambia el color del texto a blanco */
+  margin-left: 10px; /* Opcional: espacio entre el checkbox y el texto */
+  display: inline; /* Asegura que el texto se alinee con el checkbox */
+}
+
+/* Sección Conocimientos */
+/*  Pense en conservar el background que habia hecho pero me arrepenti, me gusto el diseño actual */
+/* #conocimientos {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente 
+  background: url('/assets/img/backgrounds/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+} 
+
+/* Sección Formulario de Contacto */
+/* #contacto {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente 
+} */
+
+/* Estilo para el footer */
+footer {
+  background: #343a40;
+  color: #fff;
+}
+
+
+/******************************************
+************** MEDIA QUERIES **************
+******************************************/
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 500px) {
+  header {
+    padding: 50px 0;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 150px; /* Ajusta el tamaño de la imagen de las tarjetas */
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 501px) and (max-width: 765px) {
+  header {
+    padding: 70px 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    padding: 40px;
+    font-size: 1.125rem;
+  }
+
+  .card-img-top {
+    height: 180px; /* Ajusta el tamaño de la imagen de las tarjetas */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
+
+/* Pantallas grandes (computadoras) */
+@media (min-width: 766px) and (max-width: 1080px) {
+  header {
+    padding: 80px 0;
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+  }
+
+  header p {
+    padding: 60px;
+    font-size: 1.2rem;
+  }
+
+  .card-img-top {
+    height: 200px; /* Ajusta el tamaño de la imagen de las tarjetas */
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+}
+
+/* Pantallas 4K y más grandes */
+@media (min-width: 1081px) {
+  header {
+    padding: 100px 0;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    padding: 80px;
+    font-size: 1.25rem;
+  }
+
+  .card-img-top {
+    height: 250px; /* Ajusta el tamaño de la imagen de las tarjetas */
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+    padding: 25px;
+  }
+}
