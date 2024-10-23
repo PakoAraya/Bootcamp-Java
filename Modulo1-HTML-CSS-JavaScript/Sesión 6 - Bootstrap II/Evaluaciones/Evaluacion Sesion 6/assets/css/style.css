@@ -1,0 +1,25 @@
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar.navbar-expand-lg{
+  background-color: #051B54;
+} 
+
+.btn-inicioSesion{
+  background-color: #FFFFFF33;
+  color: white !important;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.col-md-8{
+  background-color: cyan;
+}
+
+.image-container {
+  max-width: 100%;
+  height: auto;
+}
+

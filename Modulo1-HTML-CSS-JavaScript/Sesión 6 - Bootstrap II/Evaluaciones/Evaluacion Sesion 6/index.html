@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>AeroVia Express</title>
+</head>
+
+<body>
+  <!-- Navbar desde bootstrap -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: white;" href="#">AeroVia Express</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white;">
+              Ofertas y destinos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white;">
+              Mis viajes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Centro de ayuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Estado de vuelo</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn-inicioSesion" type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin del navbar -->
+
+  <!-- Comienzo del banner o jumbotron -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>¡Vacaciones de verano!</h1>
+        <p> Vuela por Chile y Sudamérica con hasta 40% de descuento. Encuentra paquetes, hoteles, seguros y arriendo de
+          autos en AeroVia Express. </p>
+        <a href="#" target="_blank">Compra aquí</a>
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/img/polynesia.jpg" alt="Imagen promocional" class="image-container">
+      </div>
+    </div>
+  </div>
+  <!-- Fin del banner -->
+<br>
+  <!-- Comienzo de los formularios -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <button style="background-color: white;">Vuelos</button>
+                  <button style="background-color: white;">Paquetes</button>
+                  <button style="background-color: white;">Hoteles</button>
+                  <button style="background-color: white;">Autos</button>
+                  <button style="background-color: white;">Seguros</button>
+                  <button style="background-color: white;">Upgrade</button>
+                </li>
+                </ul>
+        </div>
+    </nav>
+
+    <form>
+        <div class="row">
+            <div class="col-md-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Ida y Vuelta</option>
+                    <option value="1">Solo Ida</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Economy</option>
+                    <option value="1">Business</option>
+                    <option value="2">First</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="number" class="form-control" id="pasajeros" placeholder="1 pasajero">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="origen" placeholder="Origen">
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="destino" placeholder="Destino">
+            </div>
+            <div class="col-md-2">
+                <label for="">Fecha ida</label>
+            </div>
+            <div class="col-md-2">
+                <input type="date" class="form-control" id="fecha_ida">
+            </div>
+            <div class="col-md-2">
+                <label for="">Fecha vuelta</label>
+            </div>
+            <div class="col-md-2">
+              <input type="date" class="form-control" id="fecha_vuelta">
+          </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-danger">Buscar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+  <!-- Scripts necesarios para la web -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
