@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Function</title>
+</head>
+<body>
+  <button onclick="areaRectangulo(2,4)">Ver</button>
+
+  <script>
+
+    function sumaDosNumeros(numero1, numero2){
+      let suma = numero1 + numero2;
+      console.log("Resultado Numero:", suma);
+      return suma;
+    }
+
+    function multilicarDosNumeros(numero1, numero2){
+      let multi = numero1 * numero2;
+      console.log("Resultado Multiplicacion:", multi);
+      return multi;
+    }
+
+    function sumaMultiplicacion(numero1, numero2, numero3){
+      let suma = sumaDosNumeros(numero1, numero2);
+      let multiplicacion = multilicarDosNumeros(suma, numero3);
+      console.log("Resultado sumaMultiplicacion:", multiplicacion);
+      return multiplicacion;
+    }
+    // Calcular area de un cuadrado
+    function areaCuadrado(lado){
+      let area = lado * 2;
+      console.log("El area del cuadrado es: ", area);
+      return area;
+    }
+
+    function areaTriangulo(base, altura){
+      let area = (base * altura)/2;
+      console.log("El area del triangulo es: ", area);
+      return area;
+    }
+
+    function areaRectangulo(base, altura){
+      let area = base * altura;
+      console.log("El area del rectangulo es: ", area);
+      return area;
+    }
+
+  </script>
+</body>
+</html>

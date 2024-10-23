@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio1</title>
+  <link rel="stylesheet" href="/css/ejercicio1.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <div id="item1" class="item">Item 1</div>
+    <div id="item2" class="item">Item 2</div>
+    <div id="item3" class="item">Item 3</div>
+  </div>
+  <button onclick="cambiarColor()">Cambiar Color</button>
+
+  <script>
+    function cambiarColor(){
+      let box1 = document.getElementById("item1");
+      box1.style.backgroundColor = "blue";
+      box1.style.color = "white";
+
+      let box2 = document.getElementById("item2");
+      box2.style.backgroundColor = "red";
+      box2.style.color = "white";
+
+      let box3 = document.getElementById("item3");
+      box3.style.backgroundColor = "green";
+      box3.style.color = "white";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    //Declaracion de variables.
+    //var   => Global o bloque
+    //let   => Global o bloque, pero no se puede volver a declarar en otro bloque de codigo.
+    //const => Se ocupa para valores constantes, se declara una sola vez junto con su valor y no se puede reescribir.
+
+
+    //Declaracion global de var.
+    //var saludo = "Hola a todos";
+    function saludar(){
+      var saludo = "Hola a todos";
+      console.log(saludo);
+    }
+
+    //Esta funcion daria error pues no puede acceder a la variable saludo que es parte de la otra funcion.
+    //Hay que tener cuidado, porque podemos reescribir el valor de una variable.
+    function despedir(){
+      saludo = "Chao a todos";
+      console.log(saludo);
+    }
+
+    function saludar2(){
+      const saludo = "Hola a todos";
+      saludo = '999';
+      console.log("Funcion saludo: ", saludo);
+    }
+
+    function despedir2(){
+      let saludo = "chao";
+      console.log("Funcion despedir ", saludo);
+    }
+
+    saludar();
+    despedir();
+    saludar();
+  </script>
+</body>
+</html>

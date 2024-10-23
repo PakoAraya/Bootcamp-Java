@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Día Semana</title>
+</head>
+<body>
+  
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1>Día de la semana</h1>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 mx-auto">
+          <div class="form-group row">
+            <label for="numDia" class="mb-3">Ingrese un número del 1 al 7:</label>
+            <input type="number" id="valorDia" placeholder="Ejemplo: 1- Lunes | 2- Martes..." required><br><br>
+          </div>
+          <button class="btn btn-success" onclick="mostrarDia()">Mostrar Día</button>
+          <p id="resultadoDescuento" class="m-3"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // function mostrarDia(){
+    //   let numDia = document.getElementById("valorDia").value;
+    //   console.log(numDia);
+      
+    //   if(numDia >0 && numDia <8){
+    //     alert("Numero entre 1 y 7 => "+ numDia);
+    //   }else{
+    //     alert("Error numero no cumple criterio => " + numDia);
+    //   }
+    // }
+
+    /*
+    function mostrarDia(){
+      let numDia = document.getElementById("valorDia").value;
+      try {
+        if (typeof numDia !== 'number'|| isNaN(numDia) || numDia < 1 || numDia > 7) {
+          throw("El valor ingresado debe ser entre 1 y 7 ");
+        }
+        switch (numDia) {
+          case 1:
+            alert("No es fin de semana :( | es Lunes");            
+            break;
+          case 2:  
+            alert("No es fin de semana :( | es Martes");            
+            break;  
+          case 3:  
+            alert("No es fin de semana :( | es Miercoles");            
+            break;         
+          case 4:  
+            alert("No es fin de semana :( | es Jueves");            
+            break;
+          case 5:  
+            alert("No es fin de semana :( | es Viernes");            
+            break;
+          case 6:  
+            alert("No es fin de semana :( | es Sábado");            
+            break;
+          case 7:  
+            alert("No es fin de semana :( | es Domingo");            
+            break;
+          default:
+            alert("Numero no tiene día asignado");
+            break;
+        }
+      } catch (error) {
+        alert("Error, ninguna de las opciones escogidas es válida", error.message);
+      }
+    } */
+
+    function mostrarDia(){
+      let numDia = document.getElementById("valorDia").value;
+      try {
+          // Convertir el valor a un número
+          numDia = Number(numDia);
+          // Validar que el número esté en el rango válido (1 a 7)
+          if (isNaN(numDia) || numDia < 1 || numDia > 7 || typeof numDia !== 'number') {
+              throw new Error("El valor ingresado debe ser un número entre 1 y 7.");
+          }
+          // Determinar el mensaje según el día
+          let mensaje;
+          switch (numDia) {
+              case 1:
+                  mensaje = "No es fin de semana :( | es Lunes";
+                  break;
+              case 2:
+                  mensaje = "No es fin de semana :( | es Martes";
+                  break;
+              case 3:
+                  mensaje = "No es fin de semana :( | es Miércoles";
+                  break;
+              case 4:
+                  mensaje = "No es fin de semana :( | es Jueves";
+                  break;
+              case 5:
+                  mensaje = "Es fin de semana :) | es Viernes";
+                  break;
+              case 6:
+                  mensaje = "Es fin de semana :) | es Sábado";
+                  break;
+              case 7:
+                  mensaje = "Es fin de semana :) | es Domingo";
+                  break;
+              default:
+                  mensaje = "Número no tiene día asignado";
+                  break;
+          }
+          // Mostrar el mensaje
+          alert(mensaje);
+      } catch (error) {
+          alert("Error: " + error.message);
+      }
+    }
+  </script>
+
+</body>
+</html>

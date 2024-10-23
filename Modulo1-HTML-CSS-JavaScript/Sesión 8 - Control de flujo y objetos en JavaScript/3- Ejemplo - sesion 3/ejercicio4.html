@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>División de Números</h1>
+
+  <div class="container">
+    <div class="row">
+        <div id="columna1" class="col-sm-8">
+          <label for="num1">Primer número:</label>
+          <input type="number" id="num1"><br><br>
+          <label for="num2">Segundo número:</label>
+          <input type="number" id="num2"><br><br>
+          <button onclick="dividirNumeros(num1, num2)">Dividir</button>
+          <p id="resultado"></p>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function dividirNumeros(num1, num2){
+      let numero1 = parseFloat(document.getElementById("num1").value);
+      let numero2 = parseFloat(document.getElementById("num2").value);
+      let resultado = 0;
+      // console.log(numero1);
+      // console.log(numero2);
+      try {
+        if (isNaN(numero1) || isNaN(numero2)) {
+          throw new Error("Por favor ingrese valores numéricos válidos.");
+        }
+        if(numero1 === "" || numero2 === ""){
+          throw new Error("ERROR!!!, Ambos campos deben ser llenado ");
+        }
+        if(numero2 === 0){
+          throw new Error("ERROR!!!, No se puede dividir por cero");
+        }    
+        resultado = numero1 / numero2;
+        document.getElementById("resultado").innerHTML = "El resultado de la división es: " + resultado;        
+      } catch (error) {
+        document.getElementById("resultado").innerHTML = `Error: ${error.message}`;
+      }
+    }
+  </script>
+</body>
+</html>

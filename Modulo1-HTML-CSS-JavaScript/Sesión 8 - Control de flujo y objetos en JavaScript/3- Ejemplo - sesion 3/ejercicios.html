@@ -1,0 +1,85 @@
+Ejercicio 1: Flexbox - Ali9
+Objetivo:
+Crear un contenedor con tres elementos hijos que estén alineados horizontal y verticalmente al centro de la pantalla.
+
+Instrucciones:
+Utiliza Flexbox para centrar los elementos dentro de un contenedor.
+Los elementos deben estar alineados tanto horizontalmente como verticalmente en el centro de la pantalla.
+Agrega un botón que, al hacer clic, cambie el color de fondo de los tres elementos utilizando getElementById.
+Código Sugerido:
+<div class="contenedor">
+    <div id="item1" class="item">Item 1</div>
+    <div id="item2" class="item">Item 2</div>
+    <div id="item3" class="item">Item 3</div>
+</div>
+<button onclick="cambiarColor()">Cambiar Color</button>
+
+
+
+
+******DESDE ESTE PUNTO SIEMPRE USAR BOOTSTRAP
+
+Ejercicio 2: Bootstrap - Grid con Interacción
+Objetivo:
+Crear una disposición de columnas utilizando Bootstrap y cambiar el contenido de una de las columnas con getElementById.
+
+Instrucciones:
+Utiliza el sistema de grid de Bootstrap para crear una fila con tres columnas.
+Los elementos deben estar distribuidos de manera uniforme en la página.
+Agrega un botón que, al hacer clic, cambie el texto de una de las columnas.
+Código Sugerido:
+
+<div class="container">
+    <div class="row">
+        <div id="columna1" class="col-sm">
+            Columna 1
+        </div>
+        <div id="columna2" class="col-sm">
+            Columna 2
+        </div>
+        <div id="columna3" class="col-sm">
+            Columna 3
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary mt-3" onclick="cambiarTexto()">Cambiar Texto de Columna 2</button>
+
+
+
+Ejercicio 3: Determinar la Estación del Año usando if y switch
+Objetivo:
+Crear una función que determine la estación del año en función de un mes ingresado por el usuario a través de un campo
+de entrada (input).
+
+Instrucciones:
+Usa un campo de entrada (input) para recibir el número del mes (1-12).
+Utiliza if para validar que el mes esté entre 1 y 12.
+Utiliza switch para determinar la estación del año según el mes.
+Muestra la estación del año correspondiente en la página.
+Código Sugerido:
+
+<h1>Determina la Estación del Año</h1>
+<label for="mes">Ingresa el número del mes (1-12):</label>
+<input type="number" id="mes" min="1" max="12">
+<button onclick="determinarEstacion()">Determinar Estación</button>
+<p id="resultado"></p>
+
+
+Ejercicio 4: División de Números usando try-catch
+Objetivo:
+Crear una función que divida dos números proporcionados por el usuario a través de campos de entrada (input)
+y maneje errores como la división por cero o entrada no numérica (validar ambos).
+
+Instrucciones:
+Usa campos de entrada (input) para recibir los dos números.
+Utiliza try-catch para manejar errores como la división por cero o entrada no válida.
+Muestra el resultado o el mensaje de error en la página.
+Código Sugerido:
+
+<h1>División de Números</h1>
+<label for="num1">Primer número:</label>
+<input type="number" id="num1"><br><br>
+<label for="num2">Segundo número:</label>
+<input type="number" id="num2"><br><br>
+<button onclick="dividirNumeros()">Dividir</button>
+<p id="resultado"></p>

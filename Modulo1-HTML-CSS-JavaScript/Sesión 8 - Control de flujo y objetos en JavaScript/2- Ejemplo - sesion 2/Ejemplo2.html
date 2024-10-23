@@ -1,0 +1,75 @@
+<!-- Estructuras de control en HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    /* //IF
+    // --------------------------------------------- //
+    let edad = 17;
+    if(edad >= 18){
+      console.log("Es mayor de edad");
+    }else if(edad < 0){
+      console.log("Aun no nace");
+    }else{
+      console.log("No es mayor de edad");
+    }
+    // --------------------------------------------- //
+    //Preguntar con 2 parametros.
+    if(edad >= 18 && edad <= 65){
+      console.log("Puede entrar");
+    }else if(edad < 0){
+      console.log("No puede entrar");
+    }else{
+      console.log("No puede entrar");
+    }
+    // --------------------------------------------- // */
+
+    //SWITCH
+    /*
+    let nota = 3;
+    switch(nota){
+      case 1: console.log("C");
+      break;
+
+      case 2: console.log("B");
+      break;
+
+      case 3: console.log("A");
+      break;
+
+      default: 
+        console.log("No hay datos suficientes para el calculo");
+    } */
+
+    /*
+    //FOR
+    for(let index=0; index <3; index++){
+      console.log("El index es de valor: ", index);
+    } */
+
+    //TRY-CATCH (Manejo de errores)
+    function dividir(n1,n2){
+      if (n2 == 0) {
+        console.log("No se puede dividir entre 0");
+        throw "No se puede dividir entre 0"
+      }
+        return n1/n2; 
+    }
+    try {
+      dividir(1,0);  
+      
+    } catch (error) {
+      alert(error);
+      console.log("Errores",error);
+    }
+  </script>
+
+</body>
+</html>
