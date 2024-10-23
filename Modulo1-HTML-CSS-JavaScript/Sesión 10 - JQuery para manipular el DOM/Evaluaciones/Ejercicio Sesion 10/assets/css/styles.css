@@ -1,0 +1,17 @@
+#text1 {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+}
+#text2 {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  display: none; /* Oculto por defecto */
+}
+#caja2 img {
+  transition: width 0.3s ease; /* Suaviza el cambio de tamaño */
+}
+#caja3 p {
+  transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño de fuente */
+}

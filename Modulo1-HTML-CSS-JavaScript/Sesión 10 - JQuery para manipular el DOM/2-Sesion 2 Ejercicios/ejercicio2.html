@@ -1,0 +1,35 @@
+<!-- Ejercicio 2: Contador de Clics
+Objetivo: Crear un contador que incremente cada vez que el usuario haga clic en un botón.
+Instrucciones:
+Crea un botón en tu HTML.
+Utiliza jQuery para incrementar un contador cada vez que se haga clic en el botón.
+Muestra el contador en la página y en la consola.
+ 
+Pista: contador=contador+1, contador++ -->
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5: Contador de Clics</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="contadorClics">Haz Clic</button>
+    <p>Clics: <span id="contador">0</span></p>
+ 
+    <script>
+       
+        let contador = 0;       
+        $("#contadorClics").click(function() {           
+            contador++;           
+            $("#contador").text(contador);           
+            console.log("Cantidad de clics: " + contador);
+        });
+    </script>
+    
+</body>
+</html>
+
+

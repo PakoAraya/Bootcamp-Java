@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Ejercicio 1 imprimir un elemento en javascript que no este disponible -->
+  <!-- <script>
+    let productos = [
+            { nombre: "Laptop", precio: 800, disponible: true },
+            { nombre: "Tablet", precio: 300, disponible: false },
+            { nombre: "Smartphone", precio: 600, disponible: true }
+        ];
+        for(let i=0; i<productos.length; i++){
+          if(productos[i].disponible === false){
+            console.log(productos[i].nombre);
+          }
+        }
+  </script> -->
+
+  <!-- Ejercicio 2 Ahora se va a agregar un nuevo producto agregando las propiedades de javascript -->
+   <!-- <script>
+    let productos = [
+            { nombre: "Laptop", precio: 800, disponible: true },
+            { nombre: "Tablet", precio: 300, disponible: false },
+            { nombre: "Smartphone", precio: 600, disponible: true }
+        ];
+        //Aqui agregaremos al final objeto
+        productos.push({nombre:"Pc", precio: 500, disponible: true});
+        console.log(productos);
+   </script> -->
+
+   <!-- Ejercicio 3 la suma de los precios que estan disponibles en el arreglo -->
+   <script>
+    let productos = [
+            { nombre: "Laptop", precio: 800, disponible: true },
+            { nombre: "Tablet", precio: 300, disponible: false },
+            { nombre: "Smartphone", precio: 600, disponible: true }
+        ];
+        //Aqui agregaremos al final objeto
+        productos.push({nombre:"Pc", precio: 500, disponible: true});
+        console.log(productos);
+
+        let suma = 0;
+        for(let i=0; i<productos.length; i++){
+          if(productos[i].disponible === true){
+            suma = suma + productos[i].precio; //Otra forma de escribirlo suma => suma += productos[i].precio;
+          }
+        }
+        console.log("La suma de los productos disponibles es: " + suma);
+
+   </script>
+
+</body>
+</html>

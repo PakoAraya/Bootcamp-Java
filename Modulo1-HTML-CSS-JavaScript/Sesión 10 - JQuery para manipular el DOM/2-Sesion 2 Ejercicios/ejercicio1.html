@@ -1,0 +1,35 @@
+<!-- Ejercicio 1: Cambiar el Color de Fondo
+Objetivo: Cambiar el color de fondo de la página cuando el usuario haga clic en un botón.
+Instrucciones:
+Crea un botón en tu HTML.
+Utiliza jQuery para cambiar el color de fondo de la página cuando se haga clic en el botón.
+Después de cambiar el color, muestra en consola el nuevo color de fondo. -->
+ 
+ 
+<!-- Pista:".css()"
+************copia este codigo**************************************************************************** -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1: Cambiar Color de Fondo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="cambiarColor">Cambiar Color de Fondo</button>
+ 
+    <script>
+      //codigo aqui
+      $(document).ready(function () {
+        $("#cambiarColor").click(function () {
+          let color = "#00FFFF";
+          $("body").css({ "background-color": color });
+          console.log("Color de fondo cambiado por: " + color);
+        });
+      });
+    </script>
+
+</body>
+</html>

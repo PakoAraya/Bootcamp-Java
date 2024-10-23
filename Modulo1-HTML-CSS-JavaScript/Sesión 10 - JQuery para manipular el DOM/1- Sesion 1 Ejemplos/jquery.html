@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .rojo{
+      color: red;
+    }
+
+    .azul{
+      color: blue;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1 id="titulo">Este es un titulo</h1>
+  <button id="botonOcultarJS" onclick="ocultar()">Boton JS</button>
+  <button id="botonOcultarJQ" onclick="ocultar()">Boton JQ</button>
+
+  <!-- Ejercicio2 -->
+   <p id="parrafo">Este es un párrafo</p>
+   <button id="botonCambiarTexto">Cambiar Texto</button>
+
+   <!-- Ejercicio3 -->
+    <p id="parrafoColor">Texto de colores</p>
+    <button id="botonRojo">Rojo</button>
+    <button id="botonAzul">Azul</button>
+
+  <script>
+    function ocultar(){
+      let element = document.getElementById("titulo");
+      element.style.display = "none";
+    }  
+  //La misma funcion pero con JQuery
+    $("#botonOcultarJQ").click(function (){
+      $("#titulo").hide();
+    })
+
+    //Funcion del ejercicio2
+    $("#botonCambiarTexto").click(function(){
+      //Cambiar texto
+      //document.getElementById("parrafo").innerHTML= "El texto ha cambiado"; //Asi se haria con Javascript
+      $("#parrafo").text("El texto ha cambiado");
+    })
+
+    //Ejercicio 3
+    $("#botonRojo").click(function(){
+      $("#parrafoColor").addClass("rojo").removeClass("azul"); //Se puede anidar evento sobre evento
+      //$("#parrafoColor").removeClass("azul"); 
+    })
+
+    $("#botonAzul").click(function(){
+      $("#parrafoColor").addClass("azul").removeClass("rojo");
+      //$("#parrafoColor").removeClass("rojo");
+    })
+
+  </script>
+
+</body>
+</html>

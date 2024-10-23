@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario JQuery</title>
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+  <form id="formContacto" action="">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <br><br>
+
+    <label for="email">Correo Electrónico</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea name="mensaje" id="mensaje"></textarea>
+    <br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Mensaje de confirmacion -->
+  <p id="mensajeConfirmacion" class="success" style="display: none;">
+    Gracias por contactarnos!, Pronto te responderemos...
+  </p>
+
+  <script>
+    $(document).ready(function(){
+      $("#formContacto").submit(function(event){
+        //previene que se actualice la pagina.
+        event.preventDefault();
+        //Ahora llamamos al input
+        let nombre = $("#nombre").val();
+        console.log(nombre);
+
+        if(nombre == '' || nombre == null){
+          $("#mensajeConfirmacion").text
+        }
+      })
+    })
+  </script>
+
+
+
+
+
+</body>
+</html>

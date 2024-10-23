@@ -1,0 +1,31 @@
+<!-- Ejercicio 3: Mostrar/Ocultar Texto
+Objetivo: Mostrar u ocultar un texto en la página al hacer clic en un botón.
+Instrucciones:
+Crea un párrafo con un texto en tu HTML.
+Crea un botón que muestre o oculte el texto cuando se haga clic.
+Utiliza jQuery para manejar la visibilidad del texto.
+ 
+Pista:".toggle()" -->
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6: Mostrar/Ocultar Texto</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p id="texto">Este es un texto que puede ser ocultado.</p>
+    <button id="mostrarOcultar">Mostrar/Ocultar Texto</button>
+ 
+    <script>
+      $(document).ready(function () {
+        $("#mostrarOcultar").click(function (){
+          $("#texto").toggle();
+        }) 
+      });
+    </script>
+
+</body>
+</html>
