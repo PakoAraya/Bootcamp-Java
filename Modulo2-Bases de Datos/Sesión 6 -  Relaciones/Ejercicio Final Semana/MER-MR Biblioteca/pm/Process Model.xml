@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="B409AD8B-725D-BB7E-4254-A85F55982F8A">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:25:36 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

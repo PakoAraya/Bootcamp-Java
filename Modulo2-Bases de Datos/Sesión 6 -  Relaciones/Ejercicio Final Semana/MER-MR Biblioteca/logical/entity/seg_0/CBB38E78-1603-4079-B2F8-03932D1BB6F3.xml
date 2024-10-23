@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CBB38E78-1603-4079-B2F8-03932D1BB6F3" name="Libros">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:47:23 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_libro" id="5095B179-749C-009C-6784-B66F1682024B">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:47:32 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulo" id="E5336B25-15E3-250A-CC31-334343895BB2">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:47:58 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anio_publicacion" id="D4F00CBE-F314-C780-3B0C-FF158F5FD3E1">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:48:13 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_autor" id="BF59FFE4-F2A5-F761-02B0-1519BB7F684B">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:48:31 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_autor1" id="15AD3A54-8BD6-4224-8C1C-AE430A3911D8">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:49:32 UTC</createdTime>
+<generatorID>441BC8AC-9DB3-EA8D-E687-D864579D8785</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<referedAttribute>E0D125C7-5B85-C500-44AC-D164E3720C03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="273C1809-9680-6815-58C2-39929DB52E0B" name="Libros PK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:47:56 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5095B179-749C-009C-6784-B66F1682024B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

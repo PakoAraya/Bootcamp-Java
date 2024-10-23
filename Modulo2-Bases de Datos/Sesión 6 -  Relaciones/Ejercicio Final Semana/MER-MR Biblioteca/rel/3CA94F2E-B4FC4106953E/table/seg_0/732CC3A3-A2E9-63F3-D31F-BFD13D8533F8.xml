@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="732CC3A3-A2E9-63F3-D31F-BFD13D8533F8" name="Libro_Categoria">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>6CCF348B-8F4B-F376-C491-FD08F0FA2A8E</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="F7F5FBB2-FDBA-B300-D838-CB8279EBCA9A">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>47848FE1-B1C9-589F-3D5C-3765F9EF0302</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_libro" id="5959475A-2C5D-9493-6232-C72D3AB24AED">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>D8E98A00-7123-25F2-A1CB-8C0BF873233B</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libros_id_libro" id="F187A020-1C8D-E214-4EB6-2E7FC042D509">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>37B56906-DECF-FAA0-3F65-786294DEFB47</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9B55F4E-51A0-0575-68A7-21F373C5EA8D" referredColumn="F7C98E4B-E364-C5F2-A93A-6599FD1A1EB1"/>
+</associations>
+</Column>
+<Column name="Categoria_id_categoria" id="D8186E22-05C6-5673-E8CE-EAE475D0DD95">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>5BA07B66-D4AA-36FE-74AA-050BDC3511FA</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D5A1715-0443-89D7-E009-90C9D3AF3429" referredColumn="7D3159A9-2334-42DA-185D-F1FB72853356"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3EC2A85-DC82-455A-1FE0-1AF2A50D4394" name="Libro_Categoria_PK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>EA71A00D-16CB-BC8F-4169-554106C51F35</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7F5FBB2-FDBA-B300-D838-CB8279EBCA9A"/>
+<colUsage columnID="5959475A-2C5D-9493-6232-C72D3AB24AED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2121A27A-61C5-C7DA-0AA1-30A24D9E459A" name="Libro_Categoria_Categoria_FK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>E8167A54-3E2A-CA78-2245-F09DC1579FCF</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8186E22-05C6-5673-E8CE-EAE475D0DD95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20959D8A-F24E-0F6E-ED1B-BD4DC9BD4814" name="Libro_Categoria_Libros_FK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>08F5FA71-E502-4AED-D43E-7B357ED75A31</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F187A020-1C8D-E214-4EB6-2E7FC042D509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

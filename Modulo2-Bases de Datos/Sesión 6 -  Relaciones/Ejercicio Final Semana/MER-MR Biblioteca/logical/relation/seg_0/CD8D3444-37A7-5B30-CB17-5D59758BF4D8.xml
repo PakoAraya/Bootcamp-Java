@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="alquilar" directorySegmentName="seg_0" id="CD8D3444-37A7-5B30-CB17-5D59758BF4D8">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:55:17 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<sourcePk>273C1809-9680-6815-58C2-39929DB52E0B</sourcePk>
+<targetPk>837DC170-82D9-D5E8-66A4-B59D0317D89D</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CBB38E78-1603-4079-B2F8-03932D1BB6F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E0C8D690-B743-B356-FC59-F786ABE7966E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pertenece" directorySegmentName="seg_0" id="08F5FA71-E502-4AED-D43E-7B357ED75A31">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:58:59 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="3CA94F2E-0FCC-42DC-A191-B4FC4106953E" value="true"/>
+</engineerTo>
+<sourcePk>273C1809-9680-6815-58C2-39929DB52E0B</sourcePk>
+<targetPk>EA71A00D-16CB-BC8F-4169-554106C51F35</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CBB38E78-1603-4079-B2F8-03932D1BB6F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CCF348B-8F4B-F376-C491-FD08F0FA2A8E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

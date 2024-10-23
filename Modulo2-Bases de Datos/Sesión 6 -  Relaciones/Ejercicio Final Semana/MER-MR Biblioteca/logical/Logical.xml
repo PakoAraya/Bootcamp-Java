@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="EE246316-F857-509C-3719-348556A267C7" mainViewID="1EC661A8-09A8-F5E3-3624-C415F180A243">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:25:36 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

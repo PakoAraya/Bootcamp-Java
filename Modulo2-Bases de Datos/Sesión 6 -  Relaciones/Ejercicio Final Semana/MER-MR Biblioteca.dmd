@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MER-MR Biblioteca" id="96B38318-F05A-88B5-4B5E-53306D480AA9" version="3.5">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:25:36 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>96B38318-F05A-88B5-4B5E-53306D480AA9</designId>
+</OSDM_Design>

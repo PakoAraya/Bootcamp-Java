@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="077EFDA8-556C-793E-D417-CBD7C58C58B1">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:25:36 UTC</createdTime>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

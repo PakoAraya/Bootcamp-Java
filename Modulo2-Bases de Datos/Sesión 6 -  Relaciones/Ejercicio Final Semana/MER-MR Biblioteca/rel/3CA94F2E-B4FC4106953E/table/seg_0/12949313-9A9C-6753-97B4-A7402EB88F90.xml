@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12949313-9A9C-6753-97B4-A7402EB88F90" name="Autores">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>4B285641-A441-901F-84A2-F9705D5F7CA1</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_autor" id="60BAFA9C-B640-FA55-9C48-DD18E5B02C5D">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>E0D125C7-5B85-C500-44AC-D164E3720C03</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E7953C8E-187D-A66E-8691-D81A5A308C45">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>BFC86B6F-FC86-73B8-923B-97E95601580B</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="39158377-75B7-A974-85DC-D48C2666F88A">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>F4B3CAC4-CB58-5E94-64D6-C303C2577F74</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nacionalidad" id="A990CB47-6A62-0377-5728-7157D0F99E1B">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>80A1DBFA-370C-7D5D-2CE8-C03745EA3BA6</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="426D186D-E94C-1AB0-C2DC-CBEAFE362C62" name="Autores_PK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>22A7760A-AB7B-8B32-9C39-F80E49274860</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60BAFA9C-B640-FA55-9C48-DD18E5B02C5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71504415-F77D-E28E-76F1-D3125DF5B85C" name="Prestamos">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>E0C8D690-B743-B356-FC59-F786ABE7966E</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_prestamo" id="08C39971-196A-BBB2-2DF1-9A59DE687127">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>A178B3A3-49B7-E035-F630-AB5758F02F8F</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_prestamo" id="C5816A17-0B3A-DCC6-EE86-402D0257C1EE">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>437F1019-F729-52DD-5D19-4CAE558123EC</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_devolucion" id="8E32BB06-FD5C-400B-966A-347986E0484C">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>55B970C5-82BE-AA08-F825-A2C102D23444</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="etado_devolucion" id="A4A7C9BE-3585-03BA-58C5-EAB6388415B2">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>319FA3CE-B506-BEFB-264F-2ECDA187778E</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_libro" id="00C1AE34-D3A5-5EDE-AF7B-BD8AD018258B">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>BF5D3CCA-135A-0E09-3A5F-C92FEA7C9CB7</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="6B9B4BC4-8B0B-8E3C-56FA-D9EA36A3B0E0">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>544CF0C3-BE65-E19F-BEDF-FEED3136067B</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_id_usuario" id="1A87A15B-CCFA-4EF7-50B7-F543403E5D7A">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>E1ADEE1C-4AB4-D235-2802-324F2AA127E5</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="403679CF-952A-2980-0C8E-5F3FBBADFACC" referredColumn="D7AEC3C8-1578-F67D-0372-90A0BBA8B18B"/>
+</associations>
+</Column>
+<Column name="Libros_id_libro" id="0060BB0D-8E0B-FF9A-6FD0-F9D4CADF5A0E">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>402C5406-33F7-DACF-0A86-5346B4A2EB3C</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6646AE25-168F-047C-AE51-4D807A37017A" referredColumn="F7C98E4B-E364-C5F2-A93A-6599FD1A1EB1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DEA35F0-FF04-2015-AEDC-4430D5336585" name="Prestamos_PK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>837DC170-82D9-D5E8-66A4-B59D0317D89D</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08C39971-196A-BBB2-2DF1-9A59DE687127"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4252C974-E598-4851-3035-DA3E88F4B39E" name="Prestamos_Libros_FK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>CD8D3444-37A7-5B30-CB17-5D59758BF4D8</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0060BB0D-8E0B-FF9A-6FD0-F9D4CADF5A0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E013E1F-CC49-D0E2-DE22-B05D0723A14C" name="Prestamos_Usuario_FK">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-07 02:59:57 UTC</createdTime>
+<generatorID>58D84F52-5A0A-D690-FAFA-3FFC1965A906</generatorID>
+<ownerDesignName>MER-MR Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A87A15B-CCFA-4EF7-50B7-F543403E5D7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
