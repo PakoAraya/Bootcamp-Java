@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Ejercicio 1 Venta Autos" id="EC67C066-2F2A-024D-6732-9C8E41D451FE" version="3.5">
+<createdBy>pako</createdBy>
+<createdTime>2024-09-02 16:44:45 UTC</createdTime>
+<ownerDesignName>Ejercicio 1 Venta Autos</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EC67C066-2F2A-024D-6732-9C8E41D451FE</designId>
+</OSDM_Design>
