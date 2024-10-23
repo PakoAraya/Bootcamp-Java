@@ -1,0 +1,22 @@
+
+h1{
+  color: rgb(10, 176, 222);
+}
+
+.parrafo-azul{
+  color: blue;
+  font-size: 25px;
+}
+
+.parrafo-rojo{
+  color: red;
+  font-size: 22px;
+}
+
+.letra-ancha{
+  font-weight: 800;
+}
+
+#titulo-unico{
+  font-weight: bold;
+}
