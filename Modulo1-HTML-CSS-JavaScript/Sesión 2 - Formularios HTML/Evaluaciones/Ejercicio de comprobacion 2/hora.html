@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Hora</title>
+</head>
+<body>
+  <h1>FORMULARIO</h1>
+  <form action="gracias.html" method="get">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" placeholder="Fernando">
+    <br>
+    <label for="direccion">Dirección</label>
+    <input type="text" name="direccion" placeholder="Las Bandurrias #695, Peñaflor">
+    <br>
+    <label for="especialidades">Especialidades Médicas</label>
+    <select name="especialidades" id="especialidades">
+      <option value="medicina interna">Medicina Interna</option>
+      <option value="medicina general" selected>Medicina General</option>
+      <option value="traumatologia">Traumatología</option>
+      <option value="nutricionista">Nutricionista</option>
+    </select>
+    <br>
+    <label for="fecha">Fecha de reserva</label>
+    <input type="date" name="fecha" id="fecha">
+    <br>
+    <label for="hora">Hora de reserva</label>
+    <input type="time" name="hora" id="hora">
+    <br>
+    <label for="correo">Correo</label>
+    <input type="email">
+    <br>
+    <button>Confirmar</button>
+  </form>
+</body>
+</html>

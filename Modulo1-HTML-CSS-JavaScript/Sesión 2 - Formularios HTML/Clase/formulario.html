@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Formulario de registro</h1>
+
+  <form action="/submit" method="post">
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" minlength="1" maxlength="10" required>
+    <br><br>
+    <label for="clave">Clave</label>
+    <input type="password" name="clave" id="clave" minlength="1" maxlength="10" required>
+    <br><br>
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" id="edad" min="1" max="100" required>
+    <br><br>
+    <label for="fecha">Fecha de nacimiento</label>
+    <input type="date" name="fecha" id="fecha" required>
+    <br><br>
+    <label for="checkbox">Suscribirse</label>
+    <input type="checkbox" name="validar" id="checkbox" required>
+    <br><br>
+    <label for="hombre">Hombre:</label>
+    <input type="radio" name="radio" id="hombre" value="hombre">
+    <label for="mujer">Mujer:</label>
+    <input type="radio" name="radio" id="mujer" value="mujer">
+    <br><br>
+    <button type="submit">Registrar</button>
+  </form>
+
+</body>
+</html>

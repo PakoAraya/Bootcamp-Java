@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+  <form action="/submit" method="post">
+    <label for="nombre">Ingrese nombre</label>
+    <input type="text" name="nombre" id="nombre" minlength="2" maxlength="50" required>
+    <br>
+    <label for="correo">Ingrese correo</label>
+    <input type="email" name="correo" id="correo" required>
+    <br>
+    <label for="asunto">Asunto:</label>
+    <input type="text" name="asunto" id="asunto" minlength="1" maxlength="100" required>
+    <br>
+    <label for="telefono">Telefono</label>
+    <input type="number" name="telefono" id="telefono" required>
+    <br>
+    <h2>Preferencia de contacto</h2>
+    <label for="contacto">Preferencia de contacto</label>
+    <br>
+    <label for="correo">Correo</label>
+    <input type="radio" name="radio" id="correo" value="correo">
+    <label for="telefono">Telefono</label>
+    <input type="radio" name="radio" id="telefono" value="telefono">
+    <br>
+    <label for="checkbox">Suscribirse</label>
+    <input type="checkbox" name="validar" id="checkbox" required>
+    <br>
+    <button type="submit">Enviar Formulario</button>
+
+  </form>
+  
+</body>
+</html>
