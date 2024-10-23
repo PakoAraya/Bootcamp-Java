@@ -1,0 +1,67 @@
+-- creacion tabla productos
+create table productos(
+	id_producto		int primary key,
+	nombre 			varchar(100),
+	precio			decimal(10,2),
+	cantidadEnStock	int
+);
+-- creacion tabla clientes
+create table clientes(
+	id_cliente		int primary key,
+	nombre			varchar(50),
+	apellido		varchar(50),
+	email			varchar(100)
+);
+-- creacion tabla pedidos
+create table pedidos(
+	id_pedido		int primary key,
+	fecha			date,
+	id_cliente		int,
+	montoTotal		decimal(10,2),
+	constraint idCliente_fk1 foreign key(id_cliente) references clientes
+);
+-- Modificaciones de tablas
+-- Modificacion tabla productos
+alter table productos
+	add	column descripcion varchar(255);
+-- Cambio de tipo de dato
+alter table productos
+	alter column precio type decimal(12,2);
+-- Eliminar columna cantidadEnStock
+alter table productos
+	drop column cantidadenstock;
+
+-- Modificaciones en la tabla clientes
+-- Agregando columna de telefono
+alter table clientes
+	add column telefono varchar(15);
+-- Modificar el tipo de columna email
+alter table clientes
+	alter column email type varchar(150);
+-- Eliminar la columna telefono
+alter table clientes
+	drop column telefono;
+
+-- Modificaciones en la tabla pedidos
+-- Añadir columna estado
+alter table pedidos
+	add column estado varchar(20);
+-- Modificar tipo dato columna MontoTotal
+alter table pedidos
+	alter column montototal type decimal(12,2);
+-- Eliminar la columna estado.
+alter table pedidos
+	drop column estado;
+
+-- Eliminacion de tablas
+-- Eliminar tabla productos
+drop table productos;
+-- Eliminar tabla clientes
+drop table clientes;
+-- Eliminar tabla pedidos
+drop table pedidos;
+-- Eliminar tabla proveedores
+drop table proveedores;
+-- Eliminar tabla empleados
+drop table empleados;
+
