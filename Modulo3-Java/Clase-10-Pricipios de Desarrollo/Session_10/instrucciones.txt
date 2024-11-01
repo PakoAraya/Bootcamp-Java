@@ -1,0 +1,4 @@
+
+Se entrega un codigo desordenado llamado SistemaAcademico.
+Se solicita primero indicar con comentarios que cambios se deben hacer
+y posteriormente se debe corregir el codigo utilizando patrones de diseño.
