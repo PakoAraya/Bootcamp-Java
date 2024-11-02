@@ -1,0 +1,7 @@
+Comprobante de Venta
+--------------------
+Total cancelado: 1250.0
+El detalle de su compra es:
+Producto [Nombre: Cuaderno Doble Espiral, Precio: 1000.0, Codigo: aa1]
+Producto [Nombre: Lapiz pasta azul, Precio: 250.0, Codigo: aa3]
+Gracias por preferirnos...

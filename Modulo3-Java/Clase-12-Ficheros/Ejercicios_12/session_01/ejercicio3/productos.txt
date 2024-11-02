@@ -1,0 +1,5 @@
+Manzana,1.50
+Palta,0.75
+Pan,2.00
+Leche,1.25
+Queso,3.50
