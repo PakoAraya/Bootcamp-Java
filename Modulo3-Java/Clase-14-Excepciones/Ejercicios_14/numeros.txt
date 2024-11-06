@@ -1,0 +1,6 @@
+pedro,32,6.3
+mario,45,5.8
+juana,38,6.7
+pedro,32,6.3
+Jacky,37,6.9
+PaKo,39,6.9
