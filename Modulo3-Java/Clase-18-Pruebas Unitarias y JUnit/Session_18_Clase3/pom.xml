@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Test3</groupId>
+  <artifactId>Session_18_Clase3</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Test3</name>
+  
+  <dependencies>
+		<!-- Dependencia a JUnit-->
+  	<dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.8.1</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- Dependencia Mockito -->
+    <dependency>
+    <groupId>org.mockito</groupId>
+	    <artifactId>mockito-core</artifactId>
+	    <version>3.12.4</version> <!-- Usa la última versión estable -->
+	    <scope>test</scope>
+	</dependency>
+    
+  </dependencies>
+  
+</project>
